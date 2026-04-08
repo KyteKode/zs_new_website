@@ -1,0 +1,27 @@
+@import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/600.css";
+
+@import "tailwindcss";
+
+@layer base {
+    .poppins {
+        font-family: "Poppins", sans-serif;
+    }
+}
+
+body {
+    background: linear-gradient(to bottom, #0b0b10, #161620);
+    color: white;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+p {
+    margin: 1.25rem;
+}
