@@ -1,25 +1,27 @@
 <script lang="ts">
     import slogan from "$lib/assets/slogan.png";
-
-    const placeholder = "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
+    import small_slogan from "$lib/assets/small_slogan.png";
+    import placeholder_img from "$lib";
 </script>
 
-<img src={slogan} alt="Stop the snap.">
-<p>Isn't it annoying when your zipper keeps flailing around, slapping you?</p>
+<img src={slogan} alt="Stop the snap." class="hidden xs:block">
+<img src={small_slogan} alt="Stop the snap." class="block xs:hidden">
+
+<p>Isn't it annoying when your zipper gets stuck on your shirt or neck?</p>
 <p class="font-semibold text-3xl">ZipShield is your solution.</p>
 
-<div class="w-full flex flex-row justify-center gap-8 my-10">
-    <img src={placeholder} alt="" class="w-1/5 rounded-4xl" />
-    <img src={placeholder} alt="" class="w-1/5 rounded-3xl" />
-    <img src={placeholder} alt="" class="w-1/5 rounded-3xl" />
-    <img src={placeholder} alt="" class="w-1/5 rounded-3xl" />
+<div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-8 my-10 mx-10">
+    <img src={placeholder_img} alt="" class="rounded-[15%]" />
+    <img src={placeholder_img} alt="" class="rounded-[15%]" />
+    <img src={placeholder_img} alt="" class="rounded-[15%]" />
+    <img src={placeholder_img} alt="" class="rounded-[15%]" />
 </div>
 
 <p>Zipshield slides onto your zipper and hangs onto the inside of your jacket to stop it from flailing. It is easy to make, being 3D printed with inexpensive PLA filament.</p>
-<p>You can buy it at:</p>
 
-<div class="flex flex-row gap-8">
-    <a href="/other_buy?at=Target" class="bg-gray-200 text-black rounded-2xl px-5 py-3 transition-transform hover:scale-110">Target</a>
-    <a href="/other_buy?at=Walmart" class="bg-gray-200 text-black rounded-2xl px-5 py-3 transition-transform hover:scale-110">Walmart</a>
-    <a href="/buy" class="bg-blue-500 font-semibold rounded-2xl px-5 py-3 transition duration-300 hover:shadow-[0_0_20px_#60a5fa] hover:scale-110">This Website</a>
+<h2 class="mb-4">You can buy it at:</h2>
+<div class="grid grid-cols-1 xs:grid-cols-3 gap-4 xs:gap-8">
+    <a href="/other_buy?at=Target" class="bg-gray-200 text-black rounded-2xl px-5 py-3 transition-transform hover:scale-110 flex flex-col justify-center items-center">Target</a>
+    <a href="/other_buy?at=Walmart" class="bg-gray-200 text-black rounded-2xl px-5 py-3 transition-transform hover:scale-110 flex flex-col justify-center items-center">Walmart</a>
+    <a href="/buy" class="bg-blue-500 font-semibold rounded-2xl px-5 py-3 transition duration-300 hover:shadow-[0_0_20px_#60a5fa] hover:scale-110 flex flex-col justify-center items-center">This Website</a>
 </div>

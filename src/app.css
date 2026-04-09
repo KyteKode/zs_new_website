@@ -1,27 +1,25 @@
 @import "@fontsource/poppins/400.css";
+@import "@fontsource/poppins/500.css";
 @import "@fontsource/poppins/600.css";
 
 @import "tailwindcss";
 
+@custom-variant xs (@media (width >= 520px));
+
 @layer base {
-    .poppins {
-        font-family: "Poppins", sans-serif;
+    body {
+        @apply font-['Poppins',sans-serif] bg-gradient-to-b from-blue-950 to-slate-950 bg-fixed text-white min-h-screen text-center;
     }
-}
 
-body {
-    background: linear-gradient(to bottom, #0b0b10, #161620);
-    color: white;
-    min-height: 100vh;
-    font-size: 1.5rem;
-    text-align: center;
-}
+    h1 {
+        @apply font-semibold text-5xl;
+    }
 
-h1 {
-    font-weight: 600;
-    font-size: 3rem;
-}
+    h2 {
+        @apply font-medium text-4xl;
+    }
 
-p {
-    margin: 1.25rem;
+    p {
+        @apply m-5 font-normal text-base sm:text-xl;
+    }
 }
