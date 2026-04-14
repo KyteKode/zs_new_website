@@ -1,8 +1,8 @@
 <script lang="ts">
     import { flip } from "svelte/animate";
 
-    import placeholder_img from "$lib/placeholder_img";
-    import ZSColor from "$lib/zs_color";
+    import { black_img, white_img, blue_img, red_img } from "$lib/placeholder_img";
+    import ZSColor, { zs_color_img } from "$lib/zs_color";
     import cart from "$lib/cart";
 
     import CartNotif from "$lib/components/cart_notif.svelte";
@@ -14,6 +14,8 @@
     let buy_amt: number = $state(1);
     let price: number = $state(3.99);
 
+    let current_img = $state(black_img);
+
     $effect(() => {
         price = buy_amt * 3.99;
     });
@@ -24,6 +26,8 @@
         );
         labels[color]?.classList.remove("text-white\/25");
         selected = color;
+
+        current_img = zs_color_img(selected);
     }
 
     interface Notification {
@@ -52,7 +56,7 @@
 
 <div class="grid grid-cols-1 sm:grid-cols-2 m-36 mt-5 w-full gap-10 sm:gap-6 lg:gap-52">
     <div class="max-w-full max-h-[65vh]">
-        <img src={placeholder_img} alt="" class="w-full rounded-[10%]" />
+        <img src={current_img} alt="" class="w-full rounded-[10%] aspect-square object-cover overflow-hidden" />
     </div>
 
     <div class="flex flex-col items-center justify-center gap-7.5 w-full">

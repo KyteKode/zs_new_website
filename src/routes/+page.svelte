@@ -1,7 +1,8 @@
 <script lang="ts">
     import slogan from "$lib/assets/slogan.png";
     import small_slogan from "$lib/assets/small_slogan.png";
-    import placeholder_img from "$lib/placeholder_img";
+    
+    import { black_img, white_img, blue_img, red_img } from "$lib/placeholder_img";
 </script>
 
 <img src={slogan} alt="Stop the snap." class="hidden xs:block">
@@ -11,10 +12,10 @@
 <p class="font-semibold text-3xl">ZipShield is your solution.</p>
 
 <div class="w-full grid grid-cols-2 lg:grid-cols-4 gap-8 my-10 mx-10">
-    <img src={placeholder_img} alt="" class="rounded-[15%]" />
-    <img src={placeholder_img} alt="" class="rounded-[15%]" />
-    <img src={placeholder_img} alt="" class="rounded-[15%]" />
-    <img src={placeholder_img} alt="" class="rounded-[15%]" />
+    <img src={ black_img } alt="" class="w-full rounded-[15%] aspect-square object-cover overflow-hidden" />
+    <img src={ white_img } alt="" class="w-full rounded-[15%] aspect-square object-cover overflow-hidden" />
+    <img src={ blue_img } alt="" class="w-full rounded-[15%] aspect-square object-cover overflow-hidden" />
+    <img src={ red_img } alt="" class="w-full rounded-[15%] aspect-square object-cover overflow-hidden" />
 </div>
 
 <p>Zipshield slides onto your zipper and hangs onto the inside of your jacket to stop it from flailing. It is easy to make, being 3D printed with inexpensive PLA filament.</p>
