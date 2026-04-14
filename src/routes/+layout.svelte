@@ -11,7 +11,7 @@
 	<link rel="icon" href={shield} />
 </svelte:head>
 
-<header class="h-20 sticky top-0 px-8 flex flex-col justify-center bg-[rgba(18,18,40,0.7)] backdrop-blur-sm backdrop-grayscale-50">
+<header class="h-20 sticky top-0 px-8 flex flex-col justify-center bg-[rgba(18,18,40,0.7)] backdrop-blur-sm backdrop-grayscale-50 z-1000">
 	<nav class="h-3/4 flex flex-row items-center justify-between">
 		<span class="flex flex-col justify-center h-full">
 			<a href="/" class="max-h-full max-w-[40vw] hover:scale-110 transition-transform duration-300 origin-left">
@@ -19,8 +19,9 @@
 				<img src={shield} alt="ZipShield" class="h-full aspect-41/49 block xs:hidden"/>
 			</a>
 		</span>
-		<span class="flex items-center">
+		<span class="flex flex-row gap-6 items-center">
 			<a href="/buy" class="text-2xl hover:scale-120 transition-transform duration-300">Buy</a>
+            <a href="/cart" class="text-2xl hover:scale-120 transition-transform duration-300">Cart</a>
 		</span>
 	</nav>
 </header>

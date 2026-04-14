@@ -1,7 +1,7 @@
 <script lang="ts">
     import slogan from "$lib/assets/slogan.png";
     import small_slogan from "$lib/assets/small_slogan.png";
-    import placeholder_img from "$lib";
+    import placeholder_img from "$lib/placeholder_img";
 </script>
 
 <img src={slogan} alt="Stop the snap." class="hidden xs:block">
@@ -21,7 +21,7 @@
 
 <h2 class="mb-4">You can buy it at:</h2>
 <div class="grid grid-cols-1 xs:grid-cols-3 gap-4 xs:gap-8">
-    <a href="/buy/target" class="bg-gray-200 text-black rounded-2xl px-5 py-3 transition-transform hover:scale-110 flex flex-col justify-center items-center">Target</a>
-    <a href="/buy/walmart" class="bg-gray-200 text-black rounded-2xl px-5 py-3 transition-transform hover:scale-110 flex flex-col justify-center items-center">Walmart</a>
-    <a href="/buy" class="bg-blue-500 font-semibold rounded-2xl px-5 py-3 transition duration-300 hover:shadow-[0_0_20px_#60a5fa] hover:scale-110 flex flex-col justify-center items-center">This Website</a>
+    <a href="/buy/target" class="bg-slate-300 text-black rounded-2xl px-5 py-3 transition hover:scale-110 hover:bg-slate-400 flex flex-col justify-center items-center">Target</a>
+    <a href="/buy/walmart" class="bg-slate-300 text-black rounded-2xl px-5 py-3 transition hover:scale-110 hover:bg-slate-400 flex flex-col justify-center items-center">Walmart</a>
+    <a href="/buy" class="bg-blue-500 font-semibold rounded-2xl px-5 py-3 transition duration-300 hover:shadow-[0_0_20px_#60a5fa] hover:scale-110 hover:bg-blue-400 `flex flex-col justify-center items-center">This Website</a>
 </div>
