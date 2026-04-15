@@ -1,10 +1,10 @@
 const placeholder_img = "https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=";
 export default placeholder_img;
 
-import black_img from "$lib/assets/black_zs.png";
-import white_img from "$lib/assets/white_zs.png";
-import blue_img from "$lib/assets/blue_zs.png";
-import red_img from "$lib/assets/red_zs.png";
+import black_img from "$lib/assets/black_zs.webp";
+import white_img from "$lib/assets/white_zs.webp";
+import blue_img from "$lib/assets/blue_zs.webp";
+import red_img from "$lib/assets/red_zs.webp";
 
 export { black_img, white_img, blue_img, red_img };
 
